@@ -1,0 +1,18 @@
+  <nav>
+    <div class="nav-wrapper">
+    <div class="container">
+      <a href="/" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if user}}
+        <li><a href="/links">Todos los Links</a></li>
+        <li><a href="/links/add">Agregar Links</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <li><a href="/profile">Perfil</a></li>
+        {{else}}
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Registro</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+  </div>

@@ -1,0 +1,41 @@
+<div class="container">
+<div class="row">
+    {{#each links}}
+    <div class="col s4 m4">
+      <div class="card center-align">
+        <div>
+          <span class="card-title"><a href="{{url}}">{{title}}</a></span>
+        </div>
+
+        <div class="card-content">
+          <p> {{description}}</p>
+          <p> {{ timeago create_at}}</p>
+        </div>
+
+        <div class="card-action">
+          <a href="/links/edit/{{id}}" class="waves-effect waves-light btn">Edit</a>        
+          <a href="/links/delete/{{id}}" class="waves-effect waves-light btn red ">Delete Link</a>
+        </div>
+      </div>
+    </div>
+    {{else}}
+      <div class="col s4 m4">
+      <div class="card center-align">
+        <div>
+          <span class="card-title">HUFFFF NO TIENES LINKS </a></span>
+        </div>
+        
+        <div class="card-content">
+          <P>CREA UNO</P>
+        </div>
+
+        <div class="card-action">
+         
+          <a href="/links/add" class="waves-effect waves-light btn">Crear</a>        
+        </div>
+      </div>
+    </div>
+
+  {{/each}}
+  </div>
+  </div>
